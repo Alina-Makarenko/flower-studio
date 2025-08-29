@@ -11,33 +11,188 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <a href="#" class="header__logo"></a>
-      <ul class="header__list">
-        <li class="header__item">
-          <a href="#" class="header__link">Anemone</a>
-        </li>
-        <li class="header__item">
-          <a href="#" class="header__link">About us</a>
-        </li>
-        <li class="header__item"><a href="#" class="header__link">Store</a></li>
-        <li class="header__item">
-          <a href="#" class="header__link">Delivery</a>
-        </li>
-        <li class="header__item"><a href="#" class="header__link">Blog</a></li>
-      </ul>
-      <a href="#" class="header__tel"></a>
+      <div class="container">
+        <a href="#">
+          <svg class="header__logo">
+            <use href="./img/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">Anemone</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">About us</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Store</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Delivery</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">Blog</a>
+          </li>
+        </ul>
+        <ul class="header__items">
+          <li class="header__elem"><a href="#">
+          <svg  class="header__tel">
+            <use href="./img/symbol-defs.svg#icon-tel"></use>
+          </svg>
+        </a></li>
+          <li class="header__elem"><a href="#" >
+          <svg class="header__burger">
+            <use href="./img/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </a></li>
+        </ul>
+        
+        
+      </div>
     </header>
     <main class="main">
-      <section class="hero"></section>
-      <section class="about"></section>
-      <section class="store"></section>
-      <section class="delivery"></section>
-      <section class="blog"></section>
+      <section class="hero">
+        <div class="container">
+          <picture>
+            <source
+              srcset="
+                ./img/home-pageanemone-decktop@1x.webp 1x,
+                ./img/home-pageanemone-decktop@2x.webp 2x
+              "
+              media="(min-width:1232px)"
+            />
+            <source
+              srcset="
+                ./img/home-pageanemone-tablet@1x.webp 1x,
+                ./img/home-pageanemone-tablet@2x.webp 2x
+              "
+              media="(min-width:720px)"
+            />
+            <source
+              srcset="
+                ./img/home-pageanemone-mobile@1x.webp 1x,
+                ./img/home-pageanemone-mobile@2x.webp 2x
+              "
+              media="(max-width: 719px)"
+            />
+            <img
+              src="./img/home-pageanemone-decktop@1x.webp"
+              alt="home-pageanemone"
+              class="hero__picture"
+            />
+          </picture>
+          <p class="hero__text">flower studio</p>
+          <a href="#" class="hero__link">
+            shop now shop now shop now shop now shop
+            <svg>
+              <use href="./img/symbol-defs.svg#icon-arrow-1"></use>
+            </svg>
+          </a>
+          <h2 class="hero title">ANEMONĒ</h2>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title">ABOUT</h2>
+          <div class="about__box">
+          <p class="about__text">
+            We are a minimalistic flower studio. We love people and flowers.
+            Therefore, every day we give people the beauty and joy creating
+            stylish and modern masterpieces. Every bouquet we create is unique
+            as you are.
+          </p>
+          <picture>
+            <source
+              srcset="./img/aboutprotea-desktop@1x.webp 1x, ./img/aboutprotea-desktop@2x.webp 2x"
+              media="(min-width:1232px)"
+            />
+            <source
+              srcset="
+                ./img/aboutprotea-tablet@1x.webp 1x,
+                ./img/aboutprotea-tablet@2x.webp 2x
+              "
+              media="(min-width:720px)"
+            />
+            <source
+              srcset="
+                ./img/aboutprotea-mobile@1x.webp 1x,
+                ./img/aboutprotea-mobile@2x.webp 2x
+              "
+              media="(max-width:719px)"
+            />
+            <img
+              src="./img/aboutprotea-desktop@1x.webp"
+              alt="aboutprotea"
+              class="about__picture"
+            />
+          </picture>
+          </div>
+        </div>
+      </section>
+      <section class="store"><div class="container">
+        <h2 class="store__title">STORE</h2>
+        <div class="store__box">
+        <ul class="store__list">
+          <li class="store__item">
+            <picture>
+  <source srcset="./img/compliments-desktop@1x.webp 1x, ./img/compliments-desktop@2x.webp 2x" media="(min-width:1232px)">
+  <source srcset="./img/compliments-tablet@1x.webp 1x, ./img/compliments-tablet@2x.webp 2x" media="(min-width:720px)">
+  <source srcset="./img/compliments-mobile@1x.webp 1x, ./img/compliments-mobile@2x.webp 2x" media="(max-width: 719px)">
+  <img src="./img/compliments-desktop@1x.webp" alt="Compliments example" class="store__picture">
+</picture>
+            <h3 class="store__subtitles">compliments</h3>
+            <p class="store__text">from $15</p>
+          </li>
+          <li class="store__item">
+            <picture>
+              <source srcset="./img/bouquets-desktop@1x.webp 1x, ./img/bouquets-desktop@2x.webp 2x" media="(min-width:1232px)">
+              <source srcset="./img/bouquets-tablet@1x.webp 1x, ./img/bouquets-tablet@2x.webp 2x" media="(min-width:720px)">
+              <source srcset="./img/bouquets-mobile@1x.webp 1x, ./img/bouquets-mobile@2x.webp 2x" media="(max-width: 719px)">
+            
+            <img src="./img/bouquets-desktop@1x.webp" alt="" class="store__picture">
+            </picture>
+            <h3 class="store__subtitles">bouquets size S</h3>
+            <p class="store__text">from $25</p>
+          </li>
+          <li class="store__item">
+            <picture>
+              <source srcset="./img/size-m-desktop@1x.webp 1x, ./img/size-m-desktop@2x.webp 2x" media="(min-width:1232px)">
+              <source srcset="./img/size-m-tablet@1x.webp 1x, ./img/size-m-tablet@2x.webp 2x" media="(min-width:720px)">
+              <source srcset="./img/size-m-mobile@1x.webp 1x, ./img/size-m-mobile@2x.webp 2x" media="(max-width: 719px)">
+            
+            <img src="./img/size-m-desktop@1x.webp" alt="" class="store__picture">
+            </picture>
+            <h3 class="store__subtitles">bouquets size M</h3>
+            <p class="store__text">from $45</p>
+          </li>
+          <li class="store__item">
+            <picture>
+              <source srcset="./img/size-l-desktop@1x.webp 1x, ./img/size-l-desktop@2x.webp 2x" media="(min-width:1232px)">
+              <source srcset="./img/size-l-tablet@1x.webp 1x, ./img/size-l-tablet@2x.webp 2x" media="(min-width:720px)">
+              <source srcset="./img/size-l-mobile@1x.webp 1x, ./img/size-l-mobile@2x.webp 2x" media="(max-width: 719px)">
+            
+            <img src="./img/size-l-desktop@1x.webp" alt="" class="store__picture">
+            </picture>
+            <h3 class="store__subtitles">bouquets size L</h3>
+            <p class="store__text">from $60</p>
+          </li>
+        </ul>
+        <button class="store__btn">Order flowers</button>
+        </div>
+      </div></section>
+      <section class="delivery"><div class="container"></div></section>
+      <section class="blog"><div class="container"></div></section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer"><div class="container"></div></footer>
   </body>
 </html>

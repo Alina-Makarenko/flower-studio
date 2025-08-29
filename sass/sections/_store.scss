@@ -1,0 +1,147 @@
+.store {
+  margin-bottom: 60px;
+  @media screen and (min-width: 720px) {
+    margin-bottom: 100px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    color: $text-color;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+    &::after {
+      content: "";
+      display: block;
+      width: 190px;
+      height: 1px;
+      background-color: $text-color;
+      flex-grow: 1;
+    }
+    @media screen and (min-width: 720px) {
+      font-size: 44px;
+      gap: 16px;
+      margin-bottom: 60px;
+      &::after {
+        content: "";
+        display: block;
+        width: 550px;
+      }
+    }
+    @media screen and (min-width: 1232px) {
+      margin-bottom: 80px;
+      &::after {
+        content: "";
+        display: block;
+        width: 1232px;
+      }
+    }
+  }
+
+  &__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 16px;
+    @media screen and (min-width: 720px) {
+    gap: 32px;
+    row-gap: 40px;
+  }
+  @media screen and (min-width: 1232px) {
+    row-gap: 64px;
+  }
+  }
+  &__picture {
+    width: 136px;
+    height: 155px;
+    @media screen and (min-width: 720px) {
+      width: 344px;
+      height: 399px;
+    }
+    @media screen and (min-width: 1232px) {
+      width: 600px;
+      height: 542px;
+    }
+  }
+
+  &__subtitles {
+    color: $text-color;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    @media screen and (min-width: 720px) {
+      font-size: 32px;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      &::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 1px;
+      background-color: $text-color;
+      flex-grow: 1;
+    }
+    }
+    @media screen and (min-width: 1232px) {
+      font-size: 36px;
+      margin-bottom: 4px;
+      gap: 16px;
+    }
+  }
+  &__text {
+    color: $text-color;
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    opacity: 0.6;
+    @media screen and (min-width: 720px) {
+      font-size: 24px;
+    }
+    @media screen and (min-width: 1232px) {
+      font-size: 28px;
+    }
+  }
+  &__btn{
+    display: flex;
+padding: 14px 28px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 38px;
+background: $accent-color;
+border: none;
+color: $background-color;
+font-family: "Montserrat";
+font-size: 20px;
+font-weight: 500;
+line-height: 1.2;
+margin-top: 32px;
+@media screen and (min-width: 720px) {
+      padding: 16px 32px;
+      line-height: 0.85;
+      font-size: 28px;
+      margin-top: 60px;
+    }
+  }
+}
